@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   def show
     @user = current_user
     @tweet = @user.tweets.build
-    @tweets = Tweet.all
+    @tweets = @user.tweets
   end
+
+  
 end
