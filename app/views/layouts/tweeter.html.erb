@@ -42,12 +42,38 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href= "<%=root_path%>" >Tweeter</a>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav">
+          <a class="brand" href= "<%=root_path%>"><span class="icon icon-home">
+            Home
+          </a>
+       
+     
+                
             
+          <div class="container-fluid nav-collapse pull-right">
+            <ul class="nav">
+             <!--  <a class="brand" href= "<%=root_path%>"><span class= "icon icon-cog"> </a>  -->   
+            <div class="dropdown">
+  <button class="brand" type="button" id="dropdownMenu1" data-toggle="dropdown"><span class="icon icon-cog">
+    
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit Profile</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log Out</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
             </ul>
           </div><!--/.nav-collapse -->
+            <div class='global-nav' data-section-term="top_nav">
+              <div class="global-nav-inner">
+               <div class="container offset5">
+                <h1 class="icon icon-twitter"></h1>     
+              </div>
+           </div>
+        </div>
         </div>
       </div>
     </div>

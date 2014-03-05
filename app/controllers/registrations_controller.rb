@@ -8,15 +8,13 @@ class RegistrationsController < Devise::RegistrationsController
  #    end
  #  end
 
-  def create
-    super
-    UserMailer.welcome(@user).deliver unless @user.invalid?
-  end
+
 
   protected
 
 
   def after_sign_up_path_for(resource)
+    UserMailer.welcome(current_user).deliver
     user_path(current_user)
   end
 
