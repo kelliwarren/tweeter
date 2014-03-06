@@ -7,4 +7,10 @@ class UserMailer < ActionMailer::Base
     mail(to: @user.email, subject: 'Welcome to Tweeter')
   end
 
+  def newsletter(user)
+    @user = user
+    mail(to: @user.email, subject: 'Newsletter Stuff!')
+  end
+
+
 end

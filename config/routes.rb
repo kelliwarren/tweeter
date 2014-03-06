@@ -12,5 +12,7 @@ Tweeter::Application.routes.draw do
   get "static_pages/tos"
   get "static_pages/privacy"
 
+  match '/newsletter' => "static_pages#newsletter", via: [:get, :post]
+
   
 end

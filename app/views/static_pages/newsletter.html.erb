@@ -1,0 +1,13 @@
+<h1 class="page-header"> Get Our Newsletter</h1>
+<%= form_for(@newsletter, url: newsletter_path) do |f| %> 
+<div class="control-group">
+<%= f.text_field(:name, placeholder: 'Name') %>
+</div>
+<div class="control-group">
+<%= f.email_field(:email, placeholder: 'Email') %>
+</div>
+
+<div class="control-group">
+<%= f.submit('Get It!') %>
+</div>
+<% end %>
